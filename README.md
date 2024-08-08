@@ -55,6 +55,8 @@ The dataset used in this project contains the following columns:
 - **`label`**: Classification label indicating the type of network flow
 - **`Family`**: Classification family
 
+### 2. `Mappings`
+    -Contains a list of what each label indicates.
 ## How to Run
 
 1. **Preprocess Data**:
