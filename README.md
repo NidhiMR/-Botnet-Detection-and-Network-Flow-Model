@@ -10,13 +10,15 @@ The **Botnet Detection and Network Flow Model** project aims to identify network
 
 This script preprocesses the raw network flow data and prepares it for machine learning. The steps include:
 
-- **Loading the dataset**: Reads the network flow data from a CSV file (`flowdata11.binetflow.csv`).
+- **Loading the dataset**: Reads the network flow data from a CSV file (`flowdata4.binetflow.csv`).[Training Dataset]
 - **Data Cleaning and Encoding**:
   - Fills missing values with appropriate defaults.
   - Encodes categorical variables using `LabelEncoder`.
   - Splits the dataset into training and testing sets.
   - Standardizes the features using `StandardScaler`.
-- **Saving Preprocessed Data**: Saves the preprocessed data to a new CSV file (`preprocessed_flowdata11.csv`).
+    
+- **Saving Preprocessed Data**: Saves the preprocessed data to a new CSV file (`preprocessed_flowdata4.csv`).
+- **Perform the same step for testing dataset (`flowdata11.binetflow.csv`)**
 
 ### 2. `login.py`
 
@@ -56,7 +58,9 @@ The dataset used in this project contains the following columns:
 ## How to Run
 
 1. **Preprocess Data**:
-   - Run `logistic.py` to preprocess the raw data and save it to `preprocessed_flowdata11.csv`.
+   - Run `logistic.py` to preprocess the raw data and save it to `preprocessed_flowdata4.csv`.This is training dataset.
+   - Run `logistic.py` to preprocess the raw data and save it to `preprocessed_flowdata11.csv`.This is testing dataset.
+
 
 2. **Evaluate Models**:
    - Run `login.py` to train and evaluate different machine learning models on the preprocessed data. It will also make predictions on new data if available.
